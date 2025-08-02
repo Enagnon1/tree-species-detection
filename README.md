@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Tree Species Classification
 This project focuses on the classification of tree species using high-resolution satellite imagery and geospatial data processing. The workflow integrates both R and Python scripts to preprocess, mosaic, crop, and mask satellite images, as well as to prepare datasets for machine learning tasks. The data pipeline begins with the import and processing of shapefiles that contain tree species points and canopy polygons. These are used to generate grids and masks that define the areas of interest for subsequent image analysis.
 
@@ -7,6 +6,3 @@ The R scripts in the scripts directory handle most of the geospatial operations.
 Subsequent scripts, such as `02_shift_canopy.R`, `03_mosaic_airbus_images.R`, and `04_crop_and_create_mask.R`, further refine the data. They mosaic multiple satellite image tiles, crop images according to the generated grids, and create corresponding masks for supervised learning. The project supports both Airbus and WorldView-3 imagery, with dedicated scripts for each data source. The processed images and masks are organized into structured directories under `airbus_images/` (sizing ~ 65GB, so I cannot add to the github), with subfolders for cropped images, masks, and datasets.
 
 Python scripts complement the R workflow by handling dataset preparation tasks such as splitting images and labels into training, validation, and test sets. All geospatial data, including shapefiles and processed grids, are stored in the shapefiles directory, while raw and processed imagery is managed under `airbus_images/` and `dataset/`.
-=======
-# tree-species-detection
->>>>>>> f4c4910b73f07047df935aff32edc6fa813dbfe4
